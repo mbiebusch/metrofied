@@ -1,0 +1,346 @@
+/* * * * * * * * * * * * * * * * * * 
+
+	Metro-fied Theme for ownCloud
+	cc-by-na
+	Marc Biebusch, 2012
+
+	Super early relase
+	works with webkit, firefox, some IE
+
+	best viewed with Roboto font
+
+* * * * * * * * * * * * * * * * * */
+
+/******************** 
+		GENERAL 
+********************/
+
+body {
+	font: 300 .8em/1.6em "Roboto", "Lucida Grande", Arial, Verdana, sans-serif;
+	color: #111;
+}
+
+p.info {
+	display:none !important;
+}
+
+.personalblock > legend, th, dt, label {
+	font-weight: 300;
+}
+
+#notification {
+	background-color: #B2FF00;
+	left:45%
+}
+
+table td {
+	border-bottom: 1px solid white;
+}
+
+#dropdown {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+
+	-moz-border-radius-bottomleft: 0;
+	-webkit-border-bottom-left-radius: 0;
+	border-bottom-left-radius: 0;
+	-moz-border-radius-bottomright: 0;
+	-webkit-border-bottom-right-radius: 0;
+	border-bottom-right-radius: 0;
+
+	box-shadow: none;
+	margin-right: 0.8em;
+	padding: 0.5em;
+}
+
+li[data-type=folder] {
+	background-image: url("../img/filetypes/folder.png") !important;
+}
+
+tr[data-type=dir] td.filename {
+	background-image: url("../img/filetypes/folder.png") !important;
+}
+
+tr[data-mime="image/gif"] td.filename, tr[data-mime="image/png"] td.filename, tr[data-mime="image/jpeg"] td.filename {
+	background-image: url("../img/filetypes/image.png") !important;
+}
+
+/******************** 
+		INPUT
+********************/
+
+input, textarea, select, button, .button, #quota, div.jp-progress, .pager li a {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	outline: none;
+}
+
+/******************** 
+		LOGIN-SCREEN
+********************/
+
+#body-login #header {
+	background: none;
+	filter:progid:DXImageTransform.Microsoft.gradient(enabled='false');
+
+}
+
+#body-login #login{
+	background: url('../img/cloud003.jpg') center center no-repeat;
+	background-size: cover;
+	height: 75%;
+}
+
+input[type="submit"], input[type="button"], button, .button, #quota, div.jp-progress, select, .pager li a {
+	font-weight: 300;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+#body-login #header {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+#login form input[type="checkbox"] + label {
+	font-size: 1.3em;
+	text-shadow: black 0 1px 0;
+	color:white;
+}
+
+#login #header img[alt=ownCloud] {
+	margin-top:3em;
+	margin-left: -1em;
+}
+
+/******************** 
+		HEADER
+********************/
+
+#header img[alt="ownCloud"] {
+	padding-top: 0.4em !important;
+	padding-left: 0.7em !important;
+}
+
+#navigation a {
+	background: #FFF 1em center no-repeat;
+	-webkit-transition:  none; /* flickering bug */
+	border-bottom:1px solid #fff;
+}
+
+#body-user #header, #body-settings #header {
+	background: #191919;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/******************** 
+		NAVIGATION
+********************/
+
+#navigation {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background-color: #FFF;
+}
+
+/******************** 
+		CONTROLS
+********************/
+
+#controls {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow:none;
+	background: #EEE;
+	border-bottom: 1px solid #DDD;
+}
+
+div.crumb {
+	padding: .6em 1.5em 0 1em;
+}
+
+#new, .file_upload_filename {
+	border: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background: #8100B2;
+}
+
+#new {
+	height: 15px;
+	/* sorry for this, but this way it seems to works in all browsers */
+}
+
+#new > a {
+	text-shadow: 0 1px 0 #430A58;
+}
+
+.file_upload_wrapper:hover .file_upload_filename, #new:hover {
+	background-color:#a919e0;
+}
+
+#new a {
+	display:block;
+	margin-top:-0.6em;
+}
+
+.file_upload_wrapper {
+	float:left;
+	height: 25px;
+	/* sorry for this, but this way it works in all browsers */
+}
+
+table td.filename .nametext, .uploadtext, .modified {
+	font-size: 110%;
+	font-weight: 300;
+}
+
+table tr[data-type="dir"] td.filename a.name span.nametext {
+	font-weight: 400;
+}
+
+#leftcontent li.active, .leftcontent li.active {
+	font-weight: 400;
+}
+
+.actions {
+	padding: .4em;
+}
+
+.actions input[type=text] {
+	height: .9em;
+}
+
+input, textarea, select, button, .button, #quota, div.jp-progress, .pager li a {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	outline: none;
+}
+
+/******************** 
+		SEARCH
+********************/
+
+.searchbox input[type="search"] {
+	border: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	padding: .2em 0 .2em 1.5em;
+}
+
+ #searchresults td.type {
+	border-right: 1px solid #EEE !important;
+	font-weight: 400 !important;
+	padding-right: 1em;
+}
+
+ #searchresults td.result {
+	padding-left: 1em;
+}
+
+#searchresults {
+	-moz-box-shadow:none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow:none !important;
+	-moz-border-radius-bottomleft: 0 !important;
+	-webkit-border-bottom-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	border-left: 1px solid #CCC;
+	border-bottom: 1px solid #BBB;
+}
+
+/******************** 
+		SETTINGS
+********************/
+
+#body-settings .personalblock, #body-settings .helpblock {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+.personalblock > legend {
+	padding-bottom: 2em;
+	margin-left: -0.7em;
+	font-size: 1.3em;
+}
+
+.personalblock > legend strong {
+	font-weight: 300;
+}
+
+/******************** 
+		CALENDER
+********************/
+
+#view {
+	margin-left: 0.3em;
+}
+
+#view input, #choosecalendar input {
+	margin: 0;
+	margin-left: -0.5em;
+	margin-top: 0.5em;
+	width: 6em;
+	
+}
+
+#controls .button {
+	display: inline;
+	margin: 0;
+	font-weight: 400;
+}
+
+#datecontrol_left {
+	margin: 0;
+	margin-top: 0.5em;
+}
+
+#datecontrol_right {
+	margin: 0;
+}
+
+.fc-event-skin {
+	background-color: #8100B2;
+	border:none;
+	color: white !important;
+	font-weight: 400;
+	padding: 0.1em 0 0 0.3em;
+}
+
+.fc-state-highlight {
+	background: #e7f4fe;
+}
+
+.fc-event-inner {
+	padding:0;
+}
+
+/******************** 
+		USERS
+********************/
+
+#newuser .multiselect {
+	display: inline-block;
+	margin: auto;
+	top: -0.3em;
+	height: 1.4em;
+}
